@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>List</h1>
+
+<ul>
+    {%for book in books %}
+    <li>
+        {{book.name}}---{{book.price}}---{{book.discount_price}}
+    </li>
+    {%endfor%}
+</ul>
+
+{% endblock body %}
+      
+
+
+
